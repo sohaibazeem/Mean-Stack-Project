@@ -1,0 +1,78 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Mairfair Park Form'">
+    <form class="md-float-material" [formGroup]="ngForm" name="form" (ngSubmit)="addBusiness()" #f="ngForm">
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="ID" name="id" formControlName="id" required>
+              <span class="md-line"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="OP ID" name="opid" formControlName="opid" required>
+                <span class="md-line"></span>
+              </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Week Number" name="weeknumber" formControlName="weeknumber" required>
+              <span class="md-line"></span>
+            </div>
+      
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Operative" name="operator" formControlName="operator" required>
+                <span class="md-line"></span>
+              </div>
+      
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="SAT" name="sat" formControlName="sat" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="SUN" name="sun" formControlName="sun" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="MON" name="mon" formControlName="mon" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="TUE" name="tue" formControlName="tue" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="WED" name="wed" formControlName="wed" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="THU" name="thu" formControlName="thu" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="FRI" name="fri" formControlName="fri" required>
+                <span class="md-line"></span>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="TOTAL" name="total" formControlName="total" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" placeholder="COMMENTS" name="comments" formControlName="comments" required>
+                  </textarea>
+                <span class="md-line"></span>
+              </div>
+
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </app-card>
+  </div>
+</div>

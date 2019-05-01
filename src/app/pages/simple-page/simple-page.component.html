@@ -1,0 +1,191 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Caledonian Road Form'">
+    <form class="md-float-material" [formGroup]="ngForm" name="form" (ngSubmit)="addBusiness()" #f="ngForm">
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="ID" name="id" formControlName="id" required>
+              <span class="md-line"></span>
+            </div>
+          
+            <div class="form-group">
+                <select class="form-control"  name="opid" formControlName="opid" required >
+                    <option value="" disabled selected>OP ID</option>
+                    <option value="BBC TVC - PLOT A">BBC TVC - PLOT A</option>
+                    <option value="BBC TVC - PLOT B">BBC TVC - PLOT B</option>
+                    <option value="BBC TVC - PLOT C">BBC TVC - PLOT C</option>
+                    <option value="CALEDONIAN ROAD">CALEDONIAN ROAD</option>
+                    <option value="GREENWOOD PLACE">GREENWOOD PLACE</option>
+                    <option value="LOMBARD STREET">LOMBARD STREET</option>
+                    <option value="MAYFAIR PARK RESIDENCES">MAYFAIR PARK RESIDENCES</option>
+                    <option value="National Theatre">National Theatre</option>
+                    <option value="ONE LONDON BRIDGE">ONE LONDON BRIDGE</option>
+                    <option value="TECHRETE">TECHRETE</option>
+                  </select>
+                <!-- <input type="text" class="form-control" placeholder="OP ID" name="opid" formControlName="opid" required> -->
+                <span class="md-line"></span>
+              </div>
+
+          <div class="form-group">
+              
+              <select class="form-control" name="weeknumber" formControlName="weeknumber" required >
+                  <option value="" disabled selected>WEEK NUMBER</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                </select>
+             
+              <span class="md-line"></span>
+            </div>
+      
+            <div class="form-group">
+                <select  class="form-control" placeholder="Operative" name="operator" formControlName="operator" required >
+                    <option value="" disabled selected>OPERATIVE</option>
+                    <option value="ADRIAN POPA">ADRIAN POPA</option>
+                    <option value="ADRIAN SARBULETU">ADRIAN SARBULETU</option>
+                    <option value="ALEXANDRU BULAI">ALEXANDRU BULAI</option>
+                    <option value="ALEXANDRU IONUT ARSENE">ALEXANDRU IONUT ARSENE</option>
+                    <option value="ANDREI POPA">ANDREI POPA </option>
+                    <option value="AUREL BUCUR">AUREL BUCUR</option>
+                    <option value="BUSCA MIRCEA VASILE">BUSCA MIRCEA VASILE</option>
+                    <option value="CATALIN TIRON">CATALIN TIRON</option>
+                    <option value="CIMPEANU IULIAN CLAUDIU">CIMPEANU IULIAN CLAUDIU</option>
+                    <option value="CIPRIAN ENEA">CIPRIAN ENEA</option>
+                    
+                    <option value="CIPRIAN TANASA">CIPRIAN TANASA</option>
+                    <option value="COSMA DAN VASILE">COSMA DAN VASILE</option>
+                    <option value="CRISTI POLIEC">CRISTI POLIEC</option>
+                    <option value="DAN GOREA">DAN GOREA</option>
+                    <option value="DAN RADU VARTOLOMEI">DAN RADU VARTOLOMEI</option>
+                    <option value="DANIEL LUNGU">DANIEL LUNGU</option>
+                    <option value="DANIEL RUGINA">DANIEL RUGINA</option>
+                    <option value="DORIAN VASILE OBREJA">DORIAN VASILE OBREJA</option>
+                    <option value="DORINBALAN LTD">DORINBALAN LTD</option>
+                    <option value="DUMITRU COSTIN">DUMITRU COSTIN</option>
+                    
+                    <option value="DUMITRU LIPOVANU">DUMITRU LIPOVANU</option>
+                    <option value="ELVIS GALUSCA">ELVIS GALUSCA</option>
+                    <option value="FLORENTIN TANASE">FLORENTIN TANASE</option>
+                    <option value="FLORIN BOCU">FLORIN BOCU</option>
+                    <option value="FLORIN COLAN">FLORIN COLAN</option>
+                    <option value="GABRIEL MARCU">GABRIEL MARCU</option>
+                    <option value="ION ARDELEANU">ION ARDELEANU</option>
+                    <option value="ION AVRAM CRETU">ION AVRAM CRETU</option>
+                    <option value="ION TUDORAN">ION TUDORAN</option>
+                    <option value="IONUT C. ANGHELACHI">IONUT C. ANGHELACHI</option>
+                    
+                    <option value="IULIAN NISTOR">IULIAN NISTOR</option>
+                    <option value="IUSTIN CATAU">IUSTIN CATAU</option>
+                    <option value="LIVIU VRANCEANU">LIVIU VRANCEANU</option>
+                    <option value="MARIAN IGNAT">MARIAN IGNAT</option>
+                    <option value="MARIAN RADEANU">MARIAN RADEANU</option>
+                    <option value="MARIAN TOFOLEANU">MARIAN TOFOLEANU</option>
+                    <option value="MARIUS AVRAM">MARIUS AVRAM</option>
+                    <option value="MARIUS NICUSOR ANGHELACHI">MARIUS NICUSOR ANGHELACHI</option>
+                    <option value="MIHAI T BIBIRE">MIHAI T BIBIRE</option>
+                    <option value="MIHAI UDRONI">MIHAI UDRONI</option>
+                    <option value="MIHAIL BERZAN">MIHAIL BERZAN</option>
+                    <option value="SORIN D FEDELES">SORIN D FEDELES</option>
+                    <option value="SORIN MIRCEA">SORIN MIRCEA</option>
+                    <option value="STEFAN ANGHEL">STEFAN ANGHEL</option>
+                    <option value="STEFAN MADARAS">STEFAN MADARAS</option>
+                    <option value="STEFAN STAICOVICI">STEFAN STAICOVICI</option>
+                    <option value="VALENTIN CHINTEA">VALENTIN CHINTEA</option>
+                    <option value="VALICOM FIXING LTD">VALICOM FIXING LTD</option>
+                    <option value="VASILE C SCIRTOAJE">VASILE C SCIRTOAJE</option>
+                    <option value="VASILE MIHAI">VASILE MIHAI</option>
+                    <option value="VLAD CONSTANTIN COSMA">VLAD CONSTANTIN COSMA</option>
+                    <option value="VLAD GRAUR">VLAD GRAUR</option>
+                  </select>
+                <!-- <input type="text" class="form-control" placeholder="Operative" name="operator" formControlName="operator" required> -->
+                <span class="md-line"></span>
+              </div>
+      
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="SAT" name="sat" formControlName="sat" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="SUN" name="sun" formControlName="sun" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="MON" name="mon" formControlName="mon" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="TUE" name="tue" formControlName="tue" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="WED" name="wed" formControlName="wed" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="THU" name="thu" formControlName="thu" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="FRI" name="fri" formControlName="fri" required>
+                <span class="md-line"></span>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="TOTAL" name="total" formControlName="total" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" placeholder="COMMENTS" name="comments" formControlName="comments" required>
+                  </textarea>
+                <span class="md-line"></span>
+              </div>
+
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </app-card>
+  </div>
+</div>

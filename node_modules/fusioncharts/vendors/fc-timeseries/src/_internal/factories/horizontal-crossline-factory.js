@@ -1,0 +1,1 @@
+import Crossline from'../components/crossline';export default(a=>{a.attachChild(Crossline,'horizontalCrossLine').configure({type:'horizontal'})});

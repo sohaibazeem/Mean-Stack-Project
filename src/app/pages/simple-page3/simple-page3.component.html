@@ -1,0 +1,69 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Payments Form'">
+    <form class="md-float-material" [formGroup]="ngForm" name="form" (ngSubmit)="addBusiness()" #f="ngForm">
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="ID" name="id" formControlName="id" required>
+              <span class="md-line"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="OP ID" name="opid" formControlName="opid" required>
+                <span class="md-line"></span>
+              </div>
+      
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Operative" name="operator" formControlName="operator" required>
+                <span class="md-line"></span>
+              </div>
+      
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Hours" name="hours" formControlName="hours" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="RATE/HOUR" name="rateperhour" formControlName="rateperhour" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="GROSS" name="gross" formControlName="gross" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="VAT" name="vat" formControlName="vat" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="CIS" name="cis" formControlName="cis" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="NET" name="net" formControlName="net" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="DOP" name="dop" formControlName="dop" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" placeholder="COMMENTS" name="comments" formControlName="comments" required>
+                  </textarea>
+                <span class="md-line"></span>
+              </div>
+
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </app-card>
+  </div>
+</div>

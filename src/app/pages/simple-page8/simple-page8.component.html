@@ -1,0 +1,39 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Employee Documentation'">
+    <form class="md-float-material" [formGroup]="ngForm" name="form" (ngSubmit)="addBusiness()" #f="ngForm">
+        
+         
+
+
+
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="Employee Fullname" name="employeefullname" formControlName="employeefullname" required>
+              <span class="md-line"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Work Related Document" name="workrelateddocument" formControlName="workrelateddocument" required>
+                <span class="md-line"></span>
+              </div>
+      
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Personal Document" name="personaldocument" formControlName="personaldocument" required>
+                <span class="md-line"></span>
+              </div>
+      
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Assesments" name="assesments" formControlName="assesments" required>
+                <span class="md-line"></span>
+              </div>
+
+              
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </app-card>
+  </div>
+</div>

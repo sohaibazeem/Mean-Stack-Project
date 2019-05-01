@@ -1,0 +1,45 @@
+<table class="table table-hover">
+    <thead class="font-bold">
+    <tr>
+        <td>EMPLOYEE ID</td>
+        <td>EMPLOYEE NAME</td>
+        <td>ADDRESS1</td>
+        <td>ADDRESS2</td>
+        <td>CTY</td>
+        <td>COUNTRY</td>
+
+        <td>COUNTRY</td>
+        <td>POSTCODE</td>
+        <td>MOBILE TELEPHONE</td>
+        <td>OFFICE TELEPHONE</td>
+        <td>EMAIL ADDRESS</td>
+        <td>FAX</td>
+        <td>VAT NUMBER</td>
+
+     
+    </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor="let business of businesses">
+            <td>{{ business.employeeid }}</td>
+            <td>{{ business.employeename }}</td>
+            <td>{{ business.address1 }}</td>
+            <td>{{ business.address2 }}</td>
+            <td>{{ business.city }}</td>
+            <td>{{ business.country }}</td>
+
+            <td>{{ business.country1 }}</td>
+            <td>{{ business.postcode }}</td>
+            <td>{{ business.mobiletelephone }}</td>
+            <td>{{ business.officetelephone }}</td>
+            <td>{{ business.emailaddress }}</td>
+            <td>{{ business.fax }}</td>
+            <td>{{ business.vatnumber }}</td>
+
+
+            <!-- <td><a [routerLink]="['/edit', business._id]" class="btn btn-primary edit">Edit</a></td>
+            <td><a [routerLink]="" class="btn btn-danger delete">Delete</a></td> -->
+        </tr>
+    </tbody>
+  </table>

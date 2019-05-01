@@ -1,0 +1,82 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Address Change Request'">
+    <form class="md-float-material" [formGroup]="ngForm" name="form" (ngSubmit)="addBusiness()" #f="ngForm">
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="Customer Id" name="customerid" formControlName="customerid" required>
+              <span class="md-line"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Company Name" name="companyname" formControlName="companyname" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Contact Name" name="contactname" formControlName="contactname" required>
+                <span class="md-line"></span>
+              </div>
+      
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Address1" name="address1" formControlName="address1" required>
+                <span class="md-line"></span>
+              </div>
+      
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Address2" name="address2" formControlName="address2" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="City" name="city" formControlName="city" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Country" name="country" formControlName="country" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Country" name="country1" formControlName="country1" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Postcode" name="postcode" formControlName="postcode" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mobile Telephone" name="mobiletelephone" formControlName="mobiletelephone" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Office Telephone" name="officetelephone" formControlName="officetelephone" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email Address" name="emailaddress" formControlName="emailaddress" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Fax" name="fax" formControlName="fax" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Vat Number" name="vatnumber" formControlName="vatnumber" required>
+                <span class="md-line"></span>
+              </div>
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </app-card>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<table class="table table-hover">
+    <thead class="font-bold">
+    <tr>
+        <td>PROJECT ID</td>
+        <td>PROJECT NAME</td>
+        <td>LOCATION</td>
+
+        <td>CUSTOMER</td>
+        <td>START DATE</td>
+        <td>NOTES</td>
+        <td>ONGOING</td>
+
+    </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor="let business of businesses">
+            <td>{{ business.projectid }}</td>
+            <td>{{ business.projectname }}</td>
+            <td>{{ business.location }}</td>
+            <td>{{ business.customer }}</td>
+            <td>{{ business.startdate }}</td>
+            <td>{{ business.notes }}</td>
+            <td>{{ business.ongoing }}</td>
+
+
+            <!-- <td><a [routerLink]="['/edit', business._id]" class="btn btn-primary edit">Edit</a></td>
+            <td><a [routerLink]="" class="btn btn-danger delete">Delete</a></td> -->
+        </tr>
+    </tbody>
+  </table>

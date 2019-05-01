@@ -1,0 +1,46 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Payments Form'">
+    <form class="md-float-material" [formGroup]="ngForm" name="form" (ngSubmit)="addBusiness()" #f="ngForm">
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="PROJECT ID" name="projectid" formControlName="projectid" required>
+              <span class="md-line"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Project Name" name="projectname" formControlName="projectname" required>
+                <span class="md-line"></span>
+              </div>
+      
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Location" name="location" formControlName="location" required>
+                <span class="md-line"></span>
+              </div>
+      
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Customer" name="customer" formControlName="customer" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Start Date" name="startdate" formControlName="startdate" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Notes" name="notes" formControlName="notes" required>
+                <span class="md-line"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Ongoing" name="ongoing" formControlName="ongoing" required>
+                <span class="md-line"></span>
+              </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </app-card>
+  </div>
+</div>
