@@ -1,4 +1,4 @@
-# Mean Stack Project With angular Front-end uses Mongo, Express, Angular(6)
+# Mean Stack Project With angular Front-end uses Mongo, Express, Angular(6), Node js
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 This project contains the Full front-end and Backend API'S in node js and the database with Mongoose.
